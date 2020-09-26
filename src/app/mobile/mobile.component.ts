@@ -22,6 +22,7 @@ export class MobileComponent implements OnInit {
 
   copied: string = '';
   show: boolean = false;
+  mode: boolean = false;
 
   ngOnInit() {
     this.reload();
@@ -47,6 +48,9 @@ export class MobileComponent implements OnInit {
       this.show = false
     }, 2000);
 
+  }
+  changeMode() {
+    this.mode = !this.mode;
   }
 
 }

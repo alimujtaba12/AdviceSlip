@@ -8,10 +8,14 @@
             <div class="circle"></div>
             <div class="box"></div>
         </div>
-        <div class="mob-body">
+        <div class="mob-body" [ngClass]="mode?'light-mode':'dark-mode'">
             <div class="copy-div" *ngIf="show">
                 <u>Copied</u>
                 {{copied}}
+            </div>
+            <div class="mode">
+                <button (click)="changeMode()" title="change mode" [ngClass]="mode?'light':'dark'"><i
+                        [ngClass]="mode?'fa fa-sun-o':'fa fa-moon-o'"></i></button>
             </div>
             <div class="head">
                 <p>Advice for the young at heart</p>
@@ -28,7 +32,7 @@
             </div>
             <div class="footer">
                 <button class="btn-copy" (click)="copyContent(data.advice)">Copy</button>
-                <button class="btn-tweet">Tweet</button>
+                <button class="btn-tweet btn">Tweet</button>
             </div>
         </div>
         <div class="mob-footer">
