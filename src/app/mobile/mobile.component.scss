@@ -1,0 +1,171 @@
+.wrapper{
+
+    width: 100%;
+    height: 100%;
+    background:  #22252C;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .mob-view{
+        width: 320px;
+        height: 600px;
+        background: white;
+        position: relative;
+        padding:0 20px ;
+        box-sizing: border-box;
+        
+        .tr{
+            position: absolute;
+        }
+        .tr-top-right{
+            border-top: 16px solid  #22252C;; 
+            border-left: 16px solid transparent;
+            top: -1px;
+            right: -1px;
+        }
+        .tr-top-left{
+            border-top: 16px solid  #22252C;; 
+            border-right: 16px solid transparent;
+            top: -1px;
+            left: -1px;
+        }
+        .tr-bottom-right{
+            border-bottom: 16px solid  #22252C;
+            border-left: 16px solid transparent;
+            bottom: -1px;
+            right: -1px;
+        }
+        .tr-bottom-left{
+            border-bottom: 16px solid  #22252C;
+            border-right: 16px solid transparent;
+            bottom: -1px;
+            left: -1px;
+        }
+        .mob-head{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 50px;
+            .circle{
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                border:1px solid #000;
+                margin-top: 20px;
+            }
+            .box{
+                width: 40px;
+                height: 5px;
+                border: 1px solid #000;
+                margin-top: 23px;
+                margin-left: 8px;
+            }
+        }
+        .mob-body{
+            width: 100%;
+            height: 495px;
+            border: 1px solid #000;
+            background-color:#22252c;
+            color: #fff;
+            position: relative;
+            .copy-div{
+                position: absolute;
+                top:4px;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 1px solid white;
+                width: 200px;
+                padding: 1em;
+                z-index: 10;
+                background: #22252C;
+                font-size: 13px;
+                u{
+                    display: block;
+                    font-size: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            .head{
+                margin-top: 40px;
+                p{
+                    font-size: 12px;
+                    text-align: center;
+                  
+                }
+            }
+            .body{
+                width: 100%;
+                margin-top: 22%;
+                padding: 0 20px;
+                text-align: center;
+                box-sizing: border-box;
+                .content{
+                    max-height:210px;
+                    height:150x;
+                    overflow-y:auto;
+                }
+                .btn-div{
+                    margin-top: 10px;
+                    .button {
+                        margin: auto;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100%;
+                        border: 1px solid #fff;
+                        line-height: 35px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .footer{
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+                button{
+                    padding:.5em 2em;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    color:white;
+                    cursor: pointer;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .btn-copy{
+                    margin-right: 40px;
+                   
+                    &:hover{
+                       transition: 0.3s;
+                       background: #e5e9ec;
+                       border: 1px solid #e5e9ec;
+                       color:#000;
+                    }
+                }
+                .btn-tweet{
+                    &:hover{
+                        transition: 0.3s;
+                        background: #66b4f1;
+                        border: 1px solid #66b4f1;
+                        color:#000;
+                    }
+                }
+            }
+        }
+        .mob-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .button
+            {
+            margin-top:8px;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            border: 1px solid #000;
+            
+            }
+        }
+    }
+}

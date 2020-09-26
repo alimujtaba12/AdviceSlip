@@ -1,0 +1,38 @@
+<div class="wrapper">
+    <div class="mob-view">
+        <div class="tr tr-top-right"></div>
+        <div class="tr tr-top-left"></div>
+        <div class="tr tr-bottom-right"></div>
+        <div class="tr tr-bottom-left"></div>
+        <div class="mob-head">
+            <div class="circle"></div>
+            <div class="box"></div>
+        </div>
+        <div class="mob-body">
+            <div class="copy-div" *ngIf="show">
+                <u>Copied</u>
+                {{copied}}
+            </div>
+            <div class="head">
+                <p>Advice for the young at heart</p>
+            </div>
+            <div class="body">
+                <div class="content">
+                    <h2>{{data.advice}}</h2>
+                </div>
+                <div class="btn-div">
+                    <div class="button" (click)="reload()">
+                        <i class="fa fa-repeat"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="btn-copy" (click)="copyContent(data.advice)">Copy</button>
+                <button class="btn-tweet">Tweet</button>
+            </div>
+        </div>
+        <div class="mob-footer">
+            <div class="button"></div>
+        </div>
+    </div>
+</div>
