@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/service/data.service';
 
 export interface dataRes {
@@ -35,6 +35,11 @@ export class MobileComponent implements OnInit {
       }
     }))
   }
+
+  changeMode() {
+    this.mode = !this.mode;
+  }
+
   copyContent(advice) {
     document.addEventListener('copy', (e: ClipboardEvent) => {
       e.clipboardData.setData('text/plain', (advice));
@@ -47,10 +52,6 @@ export class MobileComponent implements OnInit {
     setTimeout(() => {
       this.show = false
     }, 2000);
-
-  }
-  changeMode() {
-    this.mode = !this.mode;
   }
 
 }
