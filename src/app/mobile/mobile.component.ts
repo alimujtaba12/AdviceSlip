@@ -35,10 +35,18 @@ export class MobileComponent implements OnInit {
     }))
   }
   copyContent(advice) {
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (advice));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand('copy');
     this.copied = advice;
     this.show = true
     setTimeout(() => {
       this.show = false
     }, 2000);
+
   }
+
 }
