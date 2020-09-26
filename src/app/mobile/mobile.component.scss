@@ -111,6 +111,7 @@
                 z-index: 10;
                 background: #22252C;
                 font-size: 13px;
+                color: #fff;
 
                 u {
                     display: block;
@@ -269,15 +270,16 @@
 .light-mode {
     background: #fff !important;
     color: #000 !important;
-    .btn-div{
-        .button{
-            border:1px solid #000 !important;
+    .btn-div {
+        .button {
+            border: 1px solid #000 !important;
         }
     }
-    .footer{
-        button{
+
+    .footer {
+        button {
             border: 1px solid #000 !important;
-            color:#000 !important;
+            color: #000 !important;
         }
     }
 }
