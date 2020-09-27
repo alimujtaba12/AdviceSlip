@@ -1,8 +1,8 @@
 // variables
+
 $primary:#22252C;
 $white:#fff;
 $black:#000;
-
 
 
 .wrapper {
@@ -26,29 +26,29 @@ $black:#000;
         }
 
         .tr-top-right {
-            border-top: 16px solid $primary;
-            border-left: 16px solid transparent;
+            border-top: 15px solid $primary;
+            border-left: 15px solid transparent;
             top: -1px;
             right: -1px;
         }
 
         .tr-top-left {
-            border-top: 16px solid $primary;
-            border-right: 16px solid transparent;
+            border-top: 15px solid $primary;
+            border-right: 15px solid transparent;
             top: -1px;
             left: -1px;
         }
 
         .tr-bottom-right {
-            border-bottom: 16px solid $primary;
-            border-left: 16px solid transparent;
+            border-bottom: 15px solid $primary;
+            border-left: 15px solid transparent;
             bottom: -1px;
             right: -1px;
         }
 
         .tr-bottom-left {
-            border-bottom: 16px solid $primary;
-            border-right: 16px solid transparent;
+            border-bottom: 15px solid $primary;
+            border-right: 15px solid transparent;
             bottom: -1px;
             left: -1px;
         }
@@ -272,6 +272,8 @@ $black:#000;
     }
 
 }
+
+// Media Queries 
 
 @media only screen and (max-width: 400px) {
     .mob-view {
