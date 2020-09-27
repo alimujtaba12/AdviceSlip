@@ -14,8 +14,8 @@
                 {{copied}}
             </div>
             <div class="mode">
-                <button (click)="changeMode()" title="change mode" [ngClass]="mode?'light':'dark'"><i
-                        [ngClass]="mode?'fa fa-sun-o':'fa fa-moon-o'"></i></button>
+                <button (click)="changeMode()" [title]="mode?'light mode':'dark mode'"
+                    [ngClass]="mode?'light':'dark'"><i [ngClass]="mode?'fa fa-sun-o':'fa fa-moon-o'"></i></button>
             </div>
             <div class="head">
                 <p>Advice for the young at heart</p>
