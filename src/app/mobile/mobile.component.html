@@ -9,6 +9,9 @@
             <div class="box"></div>
         </div>
         <div class="mob-body" [ngClass]="mode?'light-mode':'dark-mode'">
+            <div class="bg-opacity" *ngIf="viewLoader">
+                <loader class="loading"></loader>
+            </div>
             <div class="copy-div" *ngIf="show">
                 <u>Copied</u>
                 {{copied}}
@@ -24,10 +27,10 @@
                 <div class="content">
                     <h2>{{data.advice}}</h2>
                 </div>
-                <div class="btn-div">
-                    <div class="button" (click)="reload()">
+                <div class="btn-div" (click)="reload()">
+                    <button class="button">
                         <i class="fa fa-repeat"></i>
-                    </div>
+                    </button>
                 </div>
             </div>
             <div class="footer">

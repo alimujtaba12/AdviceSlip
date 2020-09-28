@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MobileComponent
+    MobileComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

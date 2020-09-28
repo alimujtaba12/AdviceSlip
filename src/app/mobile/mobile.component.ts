@@ -20,15 +20,18 @@ export class MobileComponent implements OnInit {
   copied: string = '';
   show: boolean = false;
   mode: boolean = false;
+  viewLoader: boolean = false;
 
   ngOnInit() {
     this.reload();
   }
-
+  
   reload() {
+    this.viewLoader = true
     this.dataService_.getData().subscribe((res => {
       if (res) {
         this.data = res.slip;
+        this.viewLoader = false;
       }
     }))
   }
@@ -50,7 +53,7 @@ export class MobileComponent implements OnInit {
       this.show = false
     }, 2000);
   }
-  
+
   tweet() {
     alert('Soon it would be available!!!')
   }
