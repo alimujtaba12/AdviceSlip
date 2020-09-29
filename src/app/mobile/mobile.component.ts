@@ -24,8 +24,14 @@ export class MobileComponent implements OnInit {
 
   ngOnInit() {
     this.reload();
+    let modeValue = JSON.parse(localStorage.getItem('mode'));
+    if (modeValue == true) {
+      this.mode = true;
+    } else {
+      this.mode = false;
+    }
   }
-  
+
   reload() {
     this.viewLoader = true
     this.dataService_.getData().subscribe((res => {
@@ -38,6 +44,7 @@ export class MobileComponent implements OnInit {
 
   changeMode() {
     this.mode = !this.mode;
+    localStorage.setItem('mode', JSON.stringify(this.mode))
   }
 
   copyContent(advice) {
