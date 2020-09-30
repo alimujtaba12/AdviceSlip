@@ -12,4 +12,8 @@ export class DataService {
   getData(): Observable<any> {
     return this.Http.get('https://api.adviceslip.com/advice')
   }
+  
+  getToken() {
+    return localStorage.getItem('mode')
+  }
 }
