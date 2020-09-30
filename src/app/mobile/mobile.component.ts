@@ -24,7 +24,7 @@ export class MobileComponent implements OnInit {
 
   ngOnInit() {
     this.reload();
-    let modeValue = JSON.parse(this.dataService_.getToken());
+    let modeValue = JSON.parse(this.dataService_.getMode());
     if (modeValue == true) {
       this.mode = true;
     } else {
